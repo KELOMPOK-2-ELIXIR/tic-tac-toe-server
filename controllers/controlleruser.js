@@ -20,6 +20,7 @@ class ControllerUser{
             })
             .then(data => {
                 res.status(201).json({
+                    id: data.id,
                     username: data.username,
                     room: data.room
                 })
